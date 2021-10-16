@@ -18,10 +18,10 @@ ________________________________________________________________________________
 <br>
 and add json: <br>
 {<br>
-"time"="Date of the phone call record", <br>
-"callType"="Incoming / Outgoing", <br>
-"duration"="How much time the phone call took in seconds", <br>
-"phoneNumber"="what is the other phone number we called or received a call from" <br>
+"time":"Date of the phone call record", <br>
+"callType":"Incoming / Outgoing", <br>
+"duration":"How much time the phone call took in seconds", <br>
+"phoneNumber":"what is the other phone number we called or received a call from" <br>
 }<br>
 <br>
 * If the phone number exists in the blacklist the program will through an exception because it means that from some reason we did got a call from a blocked number.
@@ -46,5 +46,5 @@ ________________________________________________________________________________
 <br>
 and add json: <br>
 { <br>
-"newNumber"="New number to update" <br>
+"newNumber":"New number to update" <br>
 }
