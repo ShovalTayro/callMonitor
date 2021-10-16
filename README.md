@@ -30,7 +30,7 @@ and add json: <br>
 
 <h3> To get  all records that are bigger than some duration </h3>
 
-`$ http://localhost:8080/monitorcall/callrecords/duration/{duration}`
+`$ http://localhost:8080/callmonitor/callrecords/duration/{duration}`
 
 <h3> To update new number </h3>
 
