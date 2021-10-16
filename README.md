@@ -13,17 +13,17 @@ Go to your web browser and get into `$ http://localhost:8080/callmonitor`
 
 `$ http://localhost:8080/callmonitor`
 <br>
-and add json: 
-{
-"time"="Date of the phone call record",
-"callType"="Incoming / Outgoing",
-"duration"="How much time the phone call took in seconds",
-"phoneNumber"="what is the other phone number we called or received a call from"
-}
+and add json: <br>
+{<br>
+"time"="Date of the phone call record", <br>
+"callType"="Incoming / Outgoing", <br>
+"duration"="How much time the phone call took in seconds", <br>
+"phoneNumber"="what is the other phone number we called or received a call from" <br>
+}<br>
 <br>
 * If the phone number exists in the blacklist the program will through an exception because it means that from some reason we did got a call from a blocked number.
 <br>
-*If the phone number exists in the contact list then the field "savedContact" will be true.
+* If the phone number exists in the contact list then the field "savedContact" will be true.
 
 <h4> To get records of a specific phone number:  </h4>
 
@@ -37,7 +37,7 @@ and add json:
 
 `$ http://localhost:8080/callmonitor/{phoneNumber}`
 <br>
-and add json: 
-{
-"newNumber"="New number to update"
+and add json: <br>
+{ <br>
+"newNumber"="New number to update" <br>
 }
