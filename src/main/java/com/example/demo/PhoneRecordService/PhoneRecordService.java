@@ -88,8 +88,10 @@ public class PhoneRecordService {
 			}
 		}
 		//Update the contacts list
-		contacts.remove(phoneNumber);
-		contacts.put(newNumber, newNumber);
+		if(contacts.get(phoneNumber) != null){
+			contacts.remove(phoneNumber);
+			contacts.put(newNumber, newNumber);
+		}
 	}
 	
     
