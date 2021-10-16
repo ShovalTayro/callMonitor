@@ -87,6 +87,9 @@ public class PhoneRecordService {
 				phoneRecords.get(i).setPhoneNumber(newNumber);
 			}
 		}
+		//Update the contacts list
+		contacts.remove(phoneNumber);
+		contacts.put(newNumber, newNumber);
 	}
 	
     
