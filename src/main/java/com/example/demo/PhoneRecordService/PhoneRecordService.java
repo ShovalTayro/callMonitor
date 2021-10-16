@@ -60,9 +60,13 @@ public class PhoneRecordService {
 			throw new IllegalStateException("You must give phone number");
 		}
 		if(blackList.get(number) != null) throw new IllegalStateException("This number: " + number + "is a blocked number");
-		if(contacts.get(number) != null) phoneRecord.setsavedContact(true);
+
 		if((!phoneRecord.getCallType().equals("Incoming")) ||phoneRecord.getCallType().equals("Outgoing"))
 			throw new IllegalStateException("callType can be only 'Incoming' or 'Outgoing' ");
+		
+		if(phoneRecord.getDuration() < 0) throw new IllegalStateException("The call duration can't be negative");
+		
+		if(contacts.get(number) != null) phoneRecord.setsavedContact(true);
 
 		phoneRecordRepository.save(phoneRecord);
 	}
